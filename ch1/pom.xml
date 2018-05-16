@@ -18,10 +18,10 @@
 
 
     <modules>
-        <module>consumer</module>
-        <module>eureka</module>
-        <module>gateway</module>
-        <module>producer</module>
+        <module>ch1-sc-consumer</module>
+        <module>ch1-sc-eureka</module>
+        <module>ch1-sc-gateway</module>
+        <module>ch1-sc-provider</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
