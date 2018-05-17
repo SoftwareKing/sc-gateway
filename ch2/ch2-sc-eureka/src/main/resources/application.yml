@@ -1,12 +1,11 @@
 spring:
   application:
-    name: sc-consumer
+    name:  eureka-server
+server:
+  port: 8761
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
-server:
-  port: 8000
-feign:
-  hystrix:
-    enabled: true
+    fetch-registry: false
+    register-with-eureka: false

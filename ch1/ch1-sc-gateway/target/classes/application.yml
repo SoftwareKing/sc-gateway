@@ -1,6 +1,6 @@
 spring:
   application:
-    name: sc-gateway-server
+    name: cloud-gateway
   cloud:
     gateway:
       discovery:
@@ -8,12 +8,11 @@ spring:
           enabled: true
 
 server:
-  port: 9000
+  port: 10000
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
-
 logging:
   level:
     org.springframework.cloud.gateway: debug

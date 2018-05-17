@@ -1,14 +1,15 @@
 package org.xujin.sc.controller;
 
+import org.xujin.sc.feign.HelloRemote;
 import lombok.extern.apachecommons.CommonsLog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.xujin.sc.feign.HelloFeignService;
 
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author: xujin
@@ -19,11 +20,17 @@ import java.util.Date;
 public class HelloController {
 
     @Autowired
-    HelloFeignService helloRemote;
+    HelloRemote helloRemote;
 
     @GetMapping("/{name}")
-    public String index(@PathVariable("name") String name)  {
+    public String index(@PathVariable("name") String name) throws InterruptedException {
         log.info("the name is " + name);
+        switch (name) {
+            case "null":
+                throw new NullPointerException();
+            case "retry":
+                TimeUnit.MINUTES.sleep(10);
+        }
         return helloRemote.hello(name) + "\n" + new Date().toString();
     }
 
