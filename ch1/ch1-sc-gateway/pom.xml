@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.xujin.sc</groupId>
-    <artifactId>gateway</artifactId>
+    <artifactId>ch1-sc-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>gateway</name>
+    <name>ch1-sc-gateway</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>

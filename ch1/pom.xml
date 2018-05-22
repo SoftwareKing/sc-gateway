@@ -13,10 +13,6 @@
     <packaging>pom</packaging>
 
     <name>ch1</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
-
-
     <modules>
         <module>ch1-sc-consumer</module>
         <module>ch1-sc-eureka</module>
