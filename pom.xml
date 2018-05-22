@@ -12,7 +12,6 @@
 
 	<modules>
 		<module>ch1</module>
-		<module>ch2</module>
 	</modules>
 
 	<description>spring cloud gateway调研</description>
