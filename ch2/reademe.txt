@@ -1,0 +1,8 @@
+http://localhost:9000/SC-CONSUMER/hello/xujin
+http://localhost:9000/test/prefix/hello/xujin
+http://localhost:9000/test/prefix/hello/testCustomFilter/xujin
+
+
+
+
+
