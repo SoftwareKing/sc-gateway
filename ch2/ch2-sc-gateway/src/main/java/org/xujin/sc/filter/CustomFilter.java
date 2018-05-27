@@ -9,7 +9,7 @@ import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
 /**
- * 统计自定义Filter的处理时长
+ * 统计某个或者某种路由的的处理时长
  * @author xujin
  */
 public class CustomFilter implements GatewayFilter, Ordered {

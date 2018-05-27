@@ -13,6 +13,7 @@ import org.xujin.sc.filter.CustomFilter;
 @SpringBootApplication
 public class GatewayServerApplication {
 
+
     @Bean
     public RouteLocator customerRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
